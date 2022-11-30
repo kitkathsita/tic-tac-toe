@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.boardGame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.space {
+  height: 10vw;
+  width: 10vw;
+  border: solid white;
+  box-shadow: 0 0 .1rem #fff,
+            0 0 .1rem #fff,
+            0 0 1rem #f0f,
+            0 0 0.6rem #f0f,
+            0 0 2.4rem #f0f,
+            inset 0 0 1.0rem #f0f; 
+}
+
+header {
+  padding-top: 30px;
+  font-size: min(60px, 10vw);
+  font-family: 'Creepster', cursive;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 20px #f0f,
+      0 0 40px #f0f,
+      0 0 50px #f0f,
+      0 0 90px #f0f,
+      0 0 120px #f0f;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+footer {
+  padding-bottom: 10px;
+}
