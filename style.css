@@ -10,6 +10,27 @@ body {
   color: white;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.player {
+  font-size: min(40px, 5vw);
+  font-family: 'Creepster', cursive;
+  /* text-shadow:
+      0 0 4px #fff,
+      0 0 5px #fff,
+      0 0 8px #fff,
+      0 0 10px rgb(0, 255, 13),
+      0 0 10px rgb(0, 255, 13),
+      0 0 20px rgb(0, 255, 13),
+      0 0 25px rgb(0, 255, 13),
+      0 0 60px rgb(0, 255, 13); */
+}
+
 .boardGame {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,6 +38,7 @@ body {
 }
 
 .space {
+  display: flex;
   height: 10vw;
   width: 10vw;
   border: solid white;
@@ -26,6 +48,11 @@ body {
             0 0 0.6rem #f0f,
             0 0 2.4rem #f0f,
             inset 0 0 1.0rem #f0f; 
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Creepster', cursive;
+  font-size: min(30px, 5vw);
 }
 
 header {
