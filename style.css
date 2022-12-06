@@ -83,6 +83,15 @@ header {
   }    
 }
 
+#playagain {
+  background-color: #f0f;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+
 footer {
   padding-bottom: 10px;
 }
