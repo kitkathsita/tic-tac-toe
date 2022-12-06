@@ -18,7 +18,7 @@ main {
 }
 
 .player {
-  font-size: min(40px, 5vw);
+  font-size: min(80px, 10vw);
   font-family: 'Creepster', cursive;
   /* text-shadow:
       0 0 4px #fff,
@@ -52,12 +52,25 @@ main {
   justify-content: center;
   align-items: center;
   font-family: 'Creepster', cursive;
-  font-size: min(30px, 5vw);
+  font-size: min(60px, 10vw);
+}
+
+.active {
+  color: #f0f;
+}
+
+.winner {
+  font-family: 'Creepster', cursive;
+  font-size: min(40px, 10vw);
+}
+
+.now {
+  visibility: hidden;
 }
 
 header {
   padding-top: 30px;
-  font-size: min(60px, 10vw);
+  font-size: min(120px, 20vw);
   font-family: 'Creepster', cursive;
   animation: flicker 1.5s infinite alternate;
 }
@@ -84,7 +97,12 @@ header {
 }
 
 #playagain {
-  background-color: #f0f;
+  background-color: black;
+  color: #f0f;
+  font-size: min(40px, 10vw);
+  border: black;
+  font-family: 'Creepster', cursive;
+  cursor: pointer;
 }
 
 .hide {
