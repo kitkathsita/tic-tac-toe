@@ -59,6 +59,12 @@ const gameboard = (() => {
       }
       winner.classList.remove('now')
       gameover()
+    } else if (game[0]!='' && game[1]!='' && game[2]!='' && game[3]!='' && game[4]!='' && game[5]!='' && game[6]!='' && game[7]!='' && game[8]!='') {
+      playerOne.classList.remove('active')
+      playerTwo.classList.remove('active')
+      winner.innerHTML = 'TIED'
+      winner.classList.remove('now')
+      gameover()
     }
   }
 
